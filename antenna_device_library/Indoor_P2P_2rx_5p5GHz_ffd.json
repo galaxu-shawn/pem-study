@@ -1,0 +1,28 @@
+{
+	"description":"Example Antenna Device With 1 Tx Dipole antenna",
+	"waveform":{
+		"mode1":{
+			"mode":"PulsedDoppler",
+			"output":"FreqPulse",
+			"center_freq":5.5e9,
+			"bandwidth":80e6,
+			"num_freq_samples":256,
+			"cpi_duration":4.87e-3,
+			"num_pulse_CPI":3,
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			} 
+		},
+	"post_processing":{
+		"range_pixels": 512,
+		"doppler_pixels":256
+		},
+	"antenna": {
+		"Rx1": {
+			"type":"ffd",
+			"operation_mode":"rx",
+			"file_path": "./dipole_5p5.ffd",
+			"position":[0,0.0,0.0]
+			}
+	   }
+}

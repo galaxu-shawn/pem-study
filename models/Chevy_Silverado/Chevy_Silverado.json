@@ -1,0 +1,43 @@
+{
+    "name": "Chevy_Silverado", 
+    "version": 1, 
+    "type": "Chevy_Silverado", 
+    "class": "vehicle", 
+    "wheel_base":3.691267,
+    "wheel_radius":0.393,
+    "wheel_to_wheel_width":1.8,
+    "parts": {
+        "part-main_body": {
+            "file_name": "main_body.stl",
+            "properties": {
+                "color": "blue",
+                "material": "pec"
+            },
+            "part-wheel_rim1": {
+                "file_name": "rim.stl",
+                "properties": {
+                    "type": "wheel",
+                    "color": "black",
+                    "material": "pec",
+                    "orientation": "driver"
+                }
+            },
+            "part-wheel_tire1": {
+                "file_name": "tire.stl",
+                "properties": {
+                    "type": "wheel",
+                    "color": "black",
+                    "material": "rubber_hard",
+                    "orientation": "driver"
+                }
+            }
+        },
+        "part-main_glass": {
+            "file_name": "main_glass.stl",
+            "properties": {
+                "color": "blue",
+                "material": "glass"
+            }
+        }
+    }
+}

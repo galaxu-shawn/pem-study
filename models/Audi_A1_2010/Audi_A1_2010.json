@@ -1,0 +1,57 @@
+{
+    "name": "Audi_A1_2010",
+    "version": 1,
+    "type": "Audi_A1_2010",
+    "class": "vehicle",
+    "wheel_base": 2.5806,
+    "wheel_radius": 0.313,
+    "wheel_to_wheel_width": 1.6,
+    "parts": {
+        "part-main_body": {
+            "file_name": "main_body.stl",
+            "properties": {
+                "color": "blue",
+                "material": "pec"
+            },
+            "part-wheel_rim1": {
+                "file_name": "rim.stl",
+                "properties": {
+                    "type": "wheel",
+                    "color": "black",
+                    "material": "pec",
+                    "orientation": "driver"
+                }
+            },
+            "part-wheel_tire1": {
+                "file_name": "tire.stl",
+                "properties": {
+                    "type": "wheel",
+                    "color": "black",
+                    "material": "rubber_hard",
+                    "orientation": "driver"
+                }
+            }
+        },
+        "part-main_glass": {
+            "file_name": "main_glass.stl",
+            "properties": {
+                "color": "blue",
+                "material": "glass"
+            }
+        },
+        "part-main_lamps": {
+            "file_name": "main_lamps.stl",
+            "properties": {
+                "color": "red",
+                "material": "plastic"
+            }
+        },
+        "part-main_plates": {
+            "file_name": "main_plates.stl",
+            "properties": {
+                "color": "green",
+                "material": "pec"
+            }
+        }
+    }
+}

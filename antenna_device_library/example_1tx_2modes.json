@@ -1,0 +1,41 @@
+{
+	"description":"Example Antenna Device With 1 Tx with 2 modes",
+	"waveform":{
+		"mode1":{
+			"mode":"PulsedDoppler",
+			"output":"RangeDoppler",
+			"center_freq":77.0e9,
+			"bandwidth":750e6,
+			"num_freq_samples":700,
+			"cpi_duration":4.87e-3,
+			"num_pulse_CPI":200,	
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			},
+		"mode2":{
+			"mode":"PulsedDoppler",
+			"output":"RangeDoppler",
+			"center_freq":77.0e9,
+			"bandwidth":150e6,
+			"num_freq_samples":700,
+			"cpi_duration":4.87e-3,
+			"num_pulse_CPI":200,
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			}
+		},
+	"post_processing":{
+		"range_pixels": 512,
+		"doppler_pixels":256
+		},
+	"antenna": {
+		"Tx1": {
+			"type":"parametric",
+			"operation_mode":"tx",
+			"polarization": "VERTICAL",
+			"hpbwHorizDeg": 30.5,
+			"hpbwVertDeg": 60.5,
+			"position":[0.0,0.0,0.5]
+			}
+	}	
+}

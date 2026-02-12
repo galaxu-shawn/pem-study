@@ -1,0 +1,60 @@
+{
+	"description":"TI_AWR1642_SRR,MIMO Radar derived from publicly available datasheets for TI_AWR164",
+	"waveform":{
+		"mode1":{
+			"mode":"fmcw",
+			"output":"RangeDoppler",
+			"center_freq":78.5e9,
+			"bandwidth":425e6,
+			"num_freq_samples":64,
+			"cpi_duration":7.5e-3,
+			"num_pulse_CPI":128,
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP",
+			"ADC_SampleRate":50e6, 
+			"isIQChannel":"True"
+			} 
+		},
+	"post_processing":{
+		"range_pixels": 480,
+		"doppler_pixels":640
+		},
+	"antenna": {
+		"Tx1": {
+			"type":"ffd",
+			"operation_mode":"tx",
+			"file_path": "./tx1.ffd",
+			"position":[0.0,0.0,0.0]
+			},
+		"Tx2": {
+			"type":"ffd",
+			"operation_mode":"tx",
+			"file_path": "./tx2.ffd",
+			"position":[0.0,0.0076,0.0]
+			},
+		"Rx01": {
+			"type":"ffd",
+			"operation_mode":"rx",
+			"file_path": "./rx1.ffd",
+			"position":[0.0,-0.02222,0.0]
+			},
+		"Rx02": {
+			"type":"ffd",
+			"operation_mode":"rx",
+			"file_path": "./rx2.ffd",
+			"position":[0.0,-0.0203201,0.0]
+			},
+		"Rx03": {
+			"type":"ffd",
+			"operation_mode":"rx",
+			"file_path": "./rx3.ffd",
+			"position":[0.0,-0.0184202,0.0]
+			},
+		"Rx04": {
+			"type":"ffd",
+			"operation_mode":"rx",
+			"file_path": "./rx4.ffd",
+			"position":[0.0,-0.0165203,0.0]
+			}
+	}	
+}

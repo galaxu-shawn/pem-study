@@ -1,0 +1,144 @@
+{
+    "name": "material_properties_ITU_77.0GHz",
+    "version": 1,
+    "materials": {
+        "pec": {
+            "coating_idx": 0
+        },
+        "vacuum": {
+            "thickness": -1,
+            "relEpsReal": 1.0,
+            "relEpsImag": -0.0,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 0.0,
+            "coating_idx": 1
+        },
+        "concrete": {
+            "thickness": -1,
+            "relEpsReal": 5.24,
+            "relEpsImag": -0.32251801858337814,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 1.3811950740222534,
+            "coating_idx": 2
+        },
+        "brick": {
+            "thickness": -1,
+            "relEpsReal": 3.91,
+            "relEpsImag": -0.011135620845384962,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 0.047688698837299336,
+            "coating_idx": 3
+        },
+        "plasterboard": {
+            "thickness": -1,
+            "relEpsReal": 2.73,
+            "relEpsImag": -0.11751029708583761,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 0.5032420954176583,
+            "coating_idx": 4
+        },
+        "wood": {
+            "thickness": -1,
+            "relEpsReal": 1.99,
+            "relEpsImag": -0.11543501916963345,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 0.4943546427175625,
+            "coating_idx": 5
+        },
+        "glass": {
+            "thickness": -1,
+            "relEpsReal": 6.31,
+            "relEpsImag": -0.28272690583452553,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 1.2107881951756656,
+            "coating_idx": 6
+        },
+        "ceiling_board": {
+            "thickness": -1,
+            "relEpsReal": 1.48,
+            "relEpsImag": -0.02739486577842895,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 0.11731950305556337,
+            "coating_idx": 7
+        },
+        "chipboard": {
+            "thickness": -1,
+            "relEpsReal": 2.58,
+            "relEpsImag": -0.15004497714467083,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 0.6425730389399139,
+            "coating_idx": 8
+        },
+        "plywood": {
+            "thickness": -1,
+            "relEpsReal": 2.71,
+            "relEpsImag": -8.218459733528686,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 35.19585091666901,
+            "coating_idx": 9
+        },
+        "marble": {
+            "thickness": -1,
+            "relEpsReal": 7.074,
+            "relEpsImag": -0.07176775504849134,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 0.3073480054913144,
+            "coating_idx": 10
+        },
+        "floorboard": {
+            "thickness": -1,
+            "relEpsReal": 3.66,
+            "relEpsImag": -0.36420328089436266,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 1.559713716844601,
+            "coating_idx": 11
+        },
+        "very_dry_ground": {
+            "thickness": -1,
+            "relEpsReal": 3.0,
+            "relEpsImag": -1.9876817430168863,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 8.512318921707466,
+            "coating_idx": 12
+        },
+        "medium_dry_ground": {
+            "thickness": -1,
+            "relEpsReal": 9.714986166699312,
+            "relEpsImag": -9.712854625629863,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 41.595651066379276,
+            "coating_idx": 13
+        },
+        "wet_ground": {
+            "thickness": -1,
+            "relEpsReal": 5.278675494425365,
+            "relEpsImag": -9.92723182899134,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 42.51372918978494,
+            "coating_idx": 14
+        },
+        "metal": {
+            "thickness": -1,
+            "relEpsReal": 1.0,
+            "relEpsImag": -23350649.35064935,
+            "relMuReal": 1.0,
+            "relMuImag": 0.0,
+            "conductivity": 100000000.0,
+            "coating_idx": 15
+        }
+    }
+}

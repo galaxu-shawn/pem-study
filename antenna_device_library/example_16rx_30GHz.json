@@ -1,0 +1,118 @@
+{
+	"description":"Example Antenna Device With 16 Rx",
+	"waveform":{
+		"mode1":{
+			"mode":"PulsedDoppler",
+			"output":"FreqPulse",
+			"center_freq":30.0e9,
+			"bandwidth":300e6,
+			"num_freq_samples":256,
+			"cpi_duration":4.87e-3,
+			"num_pulse_CPI":200,	
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			} 
+		},
+	"post_processing":{
+		"range_pixels": 512,
+		"doppler_pixels":256
+		},
+	"antenna": {
+		"Rx1": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,0.0,0.0]
+			},
+		"Rx2": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,5.0e-3,0.0]
+			},
+		"Rx3": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,10.0e-3,0.0]
+			},
+		"Rx4": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,15.0e-3,0.0]
+			},
+		"Rx5": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,0.0,5.0e-3]
+			},
+		"Rx6": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,5.0e-3,5.0e-3]
+			},
+		"Rx7": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,10.0e-3,5.0e-3]
+			},
+		"Rx8": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,15.0e-3,5.0e-3]
+			},
+		"Rx9": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,0.0,10.0e-3]
+			},
+		"Rx10": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,5.0e-3,10.0e-3]
+			},
+		"Rx11": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,10.0e-3,10.0e-3]
+			},
+		"Rx12": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,15.0e-3,10.0e-3]
+			},
+		"Rx13": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,0.0,15.0e-3]
+			},
+		"Rx14": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,5.0e-3,15.0e-3]
+			},
+		"Rx15": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,10.0e-3,15.0e-3]
+			},
+		"Rx16": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0,15.0e-3,15.0e-3]
+			}
+	}
+}

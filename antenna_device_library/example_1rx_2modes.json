@@ -1,0 +1,39 @@
+{
+	"description":"Example Antenna Device With 1 Rx",
+	"waveform":{
+		"mode1":{
+			"mode":"PulsedDoppler",
+			"output":"RangeDoppler",
+			"center_freq":77.0e9,
+			"bandwidth":750e6,
+			"num_freq_samples":700,
+			"cpi_duration":4.87e-3,
+			"num_pulse_CPI":200,	
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			},
+		"mode2":{
+			"mode":"PulsedDoppler",
+			"output":"RangeDoppler",
+			"center_freq":77.0e9,
+			"bandwidth":150e6,
+			"num_freq_samples":700,
+			"cpi_duration":4.87e-3,
+			"num_pulse_CPI":200,
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			}
+		},
+	"post_processing":{
+		"range_pixels": 512,
+		"doppler_pixels":256
+		},
+	"antenna": {
+		"Rx1": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[1.5,0.0,0.5]
+			}
+	}	
+}

@@ -1,0 +1,76 @@
+{
+	"description":"Example Antenna Device With 1 Tx and 8 Rx",
+	"waveform":{
+		"mode1":{
+			"mode":"PulsedDoppler",
+			"output":"FreqPulse",
+			"center_freq":75.0e9,
+			"bandwidth":300e6,
+			"num_freq_samples":101,
+			"cpi_duration":1.948e-3,
+			"num_pulse_CPI":61,
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			}
+		},
+	"post_processing":{
+		"range_pixels": 512,
+		"doppler_pixels":256
+		},
+	"antenna": {
+		"Tx1": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"tx",
+			"position":[0.0,0.0,0.0]
+			},
+		"Rx0": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx1",
+			"position":[0.0,0.0,0.0]
+			},
+		"Rx01": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx2",
+			"position":[0.0,0.002,0.0]
+			},
+		"Rx02": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx3",
+			"position":[0.0,0.004,0.0]
+			},
+		"Rx03": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx4",
+			"position":[0.0,0.006,0.0]
+			},
+		"Rx04": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx5",
+			"position":[0.0,0.008,0.0]
+			},
+		"Rx05": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx6",
+			"position":[0.0,0.010,0.0]
+			},
+		"Rx06": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx7",
+			"position":[0.0,0.012,0.0]
+			},
+		"Rx07": {
+			"type":"ffd",
+			"file_path":"./dipole.ffd",
+			"operation_mode":"rx9",
+			"position":[0.0,0.014,0.0]
+			}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"description":"Example Antenna Device With 1 Tx and 1 Rx using the output as frequency pulse",
+	"waveform":{
+		"mode1":{
+			"mode":"PulsedDoppler",
+			"output":"FreqPulse",
+			"center_freq":10.0e9,
+			"bandwidth":100e6,
+			"num_freq_samples":3,
+			"cpi_duration":100e-3,
+			"num_pulse_CPI":3,
+			"tx_multiplex":"SIMULTANEOUS",
+			"mode_delay":"CENTER_CHIRP"
+			} 
+		},
+	"post_processing":{
+		"range_pixels": 512,
+		"doppler_pixels":256
+		},
+	"antenna": {
+		"Tx1": {
+			"type":"parametric",
+			"operation_mode":"tx",
+			"polarization": "VERTICAL",
+			"hpbwHorizDeg": 30.5,
+			"hpbwVertDeg": 60.5,
+			"position":[0,0.0,0.0]
+			},
+		"Rx1": {
+			"type":"ffd",
+			"file_path":"./beam.ffd",
+			"operation_mode":"rx",
+			"position":[0.0,0.0,0.0]
+			}
+	}	
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Wind_Turbine",
+    "version": 1,
+    "type": "Wind_Turbine",
+    "class": "other",
+    "parts": {
+        "part-mast": {
+          "file_name": "mast.stl",
+          "properties": {
+            "color": "blue",
+            "material": "pec"
+          }
+        },
+        "part-blades": {
+            "file_name": "blades.stl",
+            "properties": {
+                "color": "black",
+                "material": "plastic",
+                "initial_pos":[-4.455,0.0,102.3],
+                "initial_rot":[[1,0,0],[0,1,0],[0,0,1]],
+                "initial_lin":[0.0,0.0,0.0],
+                "initial_ang":[0.5,0.0,0.0]
+                }
+            }
+		}
+}

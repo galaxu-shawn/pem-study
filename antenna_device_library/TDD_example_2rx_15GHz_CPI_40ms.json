@@ -1,0 +1,34 @@
+{
+	"description":"CrossDipole-2Ch",
+	"waveform":{
+		"mode1":{
+			"mode":"PulsedDoppler",
+			"output":"FreqPulse",
+			"center_freq":15.1e9,
+			"bandwidth":250e6,
+			"num_freq_samples":801,
+			"cpi_duration":40e-3,
+			"num_pulse_CPI":10,
+			"tx_multiplex":"INDIVIDUAL",
+			"mode_delay":"FIRST_CHIRP"
+			}
+		},
+	"post_processing":{
+		"range_pixels": 512,
+		"doppler_pixels":256
+		},
+	"antenna": {
+		"Rx_H": {
+			"type":"ffd",
+			"file_path":"./dipole-h.ffd",
+			"operation_mode":"rx",
+			"position":[0.0,0.0,0.0]
+			},
+		"Rx_V": {
+			"type":"ffd",
+			"file_path":"./dipole-v.ffd",
+			"operation_mode":"rx",
+			"position":[0.0,0.0,0.0]
+			}
+	}
+}
