@@ -1,7 +1,0 @@
-{
-    "version": "default",
-    "api_path": "default",
-    "licensingclient_path": "default",
-    "license_feature": "perceive_em",
-    "hpc_pack_or_pool": "pack"
-}
